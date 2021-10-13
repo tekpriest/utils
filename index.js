@@ -75,11 +75,11 @@ module.exports = {
    * Check if code is running in Node.js
    * @param {String} app
    */
-  isNode: (app) => {
+  isNodeProcess: (app) => {
     return typeof app !== 'undefined' && app.versions != null && app.versions.node != null;
   },
   /**
-   *
+   * Convert params to object
    * @param {String} params
    */
   params2Object: (params) => {
